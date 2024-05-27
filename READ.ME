@@ -1,0 +1,198 @@
+# Site Stylesheet
+
+## Table of Contents
+1. [Global Styles](#global-styles)
+2. [Typography Styles](#typography-styles)
+3. [Structure Styles](#structure-styles)
+4. [Modules Styles](#modules-styles)
+5. [Component Styles](#component-styles)
+6. [Page Styles](#page-styles)
+
+---
+
+## Global Styles
+* Sets global box-sizing to border-box.
+* Defines styles for HTML and body elements.
+* Provides a clearfix utility class.
+* Defines a float-right utility class.
+
+```css
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+.float-right {
+  float: right;
+}
+```
+
+---
+
+## Typography Styles
+* Sets styles for headings (h1 to h6) with responsive font sizes.
+* Defines styles for paragraphs, links, list items, labels, and typography related elements.
+* Responsive font sizes for different screen sizes.
+
+```css
+/* Typography Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #414546;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 700;
+  transition: font-size 0.25s ease;
+}
+
+/* Styles for h1, h2, h3, h4, h5, h6 ... */
+
+p {
+  color: #414546;
+  font-family: "Roboto", Georgia, serif;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+
+/* Styles for paragraphs ... */
+
+a {
+  color: #42a5f5;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/* Styles for links ... */
+```
+
+---
+
+## Structure Styles
+* Defines a container class for layout with max-width and padding.
+* Defines styles for grid layout with responsive column classes.
+* Provides a divider class for visual separation between sections.
+
+```css
+/* Structure Styles */
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 15px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #f2f3f5;
+  clear: both;
+  width: 100%;
+}
+
+/* Styles for grid layout ... */
+```
+
+---
+
+## Modules Styles
+### Site Navigation
+* Defines styles for the site header and navigation.
+* Responsive design for navigation items and logo.
+
+```css
+/* Site Navigation */
+
+.site-header {
+  background-color: #ebebeb;
+  padding: 30px 15px 0;
+}
+
+/* Styles for site header ... */
+```
+
+### Site Footer
+* Styles for footer sections and content.
+* Responsive design for email input and button.
+
+```css
+/* Site Footer */
+
+.footer {
+  padding: 30px 30px 60px;
+}
+
+/* Styles for footer ... */
+```
+
+---
+
+## Component Styles
+* Defines styles for alerts, buttons, cards, chips, and form elements.
+* Responsive design for various components and elements.
+
+```css
+/* Component Styles */
+
+.alert {
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Styles for alerts ... */
+```
+
+---
+
+## Page Styles
+* Styles specific to main site content area.
+* Defines background color and layout styles for the main section.
+
+```css
+/* Page Styles */
+
+.site-main {
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Styles for main content area ... */
+```
+
+---
+
+Feel free to reach out if you have any questions or need further clarification.
+```
+
+This README provides both the explanations of each section of your CSS code and the code itself, making it easier for others to understand how your HTML and CSS are structured and how to use them.
